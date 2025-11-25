@@ -22,6 +22,9 @@ export default function MainLayout() {
               <Link to="/ambulances" className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-900">
                 Fleet
               </Link>
+              <Link to="/map" className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-900">
+                Map
+              </Link>
             </div>
           </div>
         </div>
