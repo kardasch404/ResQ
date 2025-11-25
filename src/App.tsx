@@ -7,6 +7,7 @@ import Dashboard from './pages/Dashboard';
 import Dispatch from './pages/Dispatch';
 import Incidents from './pages/Incidents';
 import Ambulances from './pages/Ambulances';
+import Map from './pages/Map';
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ function App() {
               <Route path="dispatch" element={<Dispatch />} />
               <Route path="incidents" element={<Incidents />} />
               <Route path="ambulances" element={<Ambulances />} />
+              <Route path="map" element={<Map />} />
             </Route>
           </Routes>
         </BrowserRouter>
