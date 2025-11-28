@@ -54,17 +54,17 @@ export default function Fleet() {
           );
         },
       }),
-      columnHelper.accessor('location.address', {
+      columnHelper.accessor('location', {
         header: 'Location',
-        cell: info => info.getValue() || '-',
+        cell: info => info.getValue()?.address || '-',
       }),
       columnHelper.accessor('crew', {
         header: 'Crew',
-        cell: info => info.getValue().join(', '),
+        cell: info => info.getValue()?.join(', ') || '-',
       }),
       columnHelper.accessor('equipment', {
         header: 'Equipment',
-        cell: info => `${info.getValue().length} items`,
+        cell: info => `${info.getValue()?.length || 0} items`,
       }),
     ],
     [updateAmbulance]

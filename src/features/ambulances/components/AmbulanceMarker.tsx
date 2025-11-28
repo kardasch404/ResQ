@@ -9,6 +9,10 @@ interface AmbulanceMarkerProps {
 
 
 export default function AmbulanceMarker({ ambulance, onClick }: AmbulanceMarkerProps) {
+  if (!ambulance?.location?.lat || !ambulance?.location?.lng) {
+    return null;
+  }
+
   const icon = createAmbulanceIcon(ambulance.status, 0);
 
   return (
