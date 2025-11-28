@@ -58,7 +58,7 @@ export default function Incidents() {
                   </span>
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap">{incident.status}</td>
-                <td className="px-6 py-4">{incident.location.address}</td>
+                <td className="px-6 py-4">{incident.location?.address || '-'}</td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                   {new Date(incident.reportedAt).toLocaleString()}
                 </td>

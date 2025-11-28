@@ -9,6 +9,7 @@ import Dispatch from './pages/Dispatch';
 import Incidents from './pages/Incidents';
 import Ambulances from './pages/Ambulances';
 import Map from './pages/Map';
+import Fleet from './pages/Fleet';
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ function App() {
               <Route path="dispatch" element={<Dispatch />} />
               <Route path="incidents" element={<Incidents />} />
               <Route path="ambulances" element={<Ambulances />} />
+              <Route path="fleet" element={<Fleet />} />
               <Route path="map" element={<Map />} />
             </Route>
           </Routes>

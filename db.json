@@ -1,71 +1,48 @@
 {
   "ambulances": [
     {
-      "id": "1",
-      "callSign": "AMB-001",
-      "status": "AVAILABLE",
-      "location": {
-        "lat": 48.8566,
-        "lng": 2.3522,
-        "address": "Paris, France"
-      },
-      "crew": [
-        "John Doe",
-        "Jane Smith"
-      ],
-      "equipment": [
-        "Defibrillator",
-        "Oxygen",
-        "Stretcher"
-      ]
+      "status": "TRANSPORTING",
+      "id": "1"
     },
     {
-      "id": "2",
-      "callSign": "AMB-002",
-      "status": "EN_ROUTE",
+      "status": "ON_SCENE",
+      "id": "2"
+    },
+    {
+      "id": "4f50",
+      "callSign": "Explicabo Minus odi",
+      "status": "AVAILABLE",
       "location": {
-        "lat": 48.8606,
-        "lng": 2.3376,
-        "address": "Paris, France"
+        "lat": 35,
+        "lng": 75,
+        "address": "Laborum Atque ut sa"
       },
       "crew": [
-        "Mike Johnson",
-        "Sarah Williams"
+        "Veniam nostrum magn"
       ],
       "equipment": [
-        "Defibrillator",
-        "Oxygen",
-        "Stretcher",
-        "Trauma Kit"
+        "Et veniam voluptate"
       ]
     }
   ],
   "incidents": [
     {
-      "id": "24de",
-      "type": "Emergency",
-      "priority": "HIGH",
-      "status": "PENDING",
-      "location": {
-        "lat": 48.8566,
-        "lng": 2.3522,
-        "address": "123 Main Street, Paris"
-      },
-      "description": "Male, 45 years old, chest pain",
-      "reportedAt": "2025-11-28T08:51:36.850Z"
+      "assignedAmbulanceId": "1",
+      "status": "ASSIGNED",
+      "id": "24de"
     },
     {
-      "id": "7c9e",
+      "id": "a3cc",
       "type": "Emergency",
-      "priority": "HIGH",
+      "priority": "LOW",
       "status": "PENDING",
       "location": {
-        "lat": 48.8566,
-        "lng": 2.3522,
-        "address": "123 Main Street, Paris"
+        "lat": 24,
+        "lng": 24,
+        "address": "Beatae voluptas eu e"
       },
-      "description": "Male, 45 years old, chest pain",
-      "reportedAt": "2025-11-28T08:52:26.183Z"
+      "description": "Odit eos molestias s",
+      "reportedAt": "2025-11-28T10:38:22.408Z"
     }
   ]
 }

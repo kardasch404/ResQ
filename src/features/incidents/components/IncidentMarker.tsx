@@ -7,6 +7,10 @@ interface IncidentMarkerProps {
 }
 
 export default function IncidentMarker({ incident }: IncidentMarkerProps) {
+  if (!incident?.location?.lat || !incident?.location?.lng) {
+    return null;
+  }
+
   const icon = createIncidentIcon(incident.priority);
 
   return (
