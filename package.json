@@ -16,6 +16,7 @@
     "@hookform/resolvers": "^5.2.2",
     "@reduxjs/toolkit": "^2.11.0",
     "@tanstack/react-query": "^5.90.10",
+    "@tanstack/react-table": "^8.21.3",
     "leaflet": "^1.9.4",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",

@@ -20,24 +20,8 @@
       ]
     },
     {
-      "id": "2",
-      "callSign": "AMB-002",
-      "status": "EN_ROUTE",
-      "location": {
-        "lat": 48.8606,
-        "lng": 2.3376,
-        "address": "Paris, France"
-      },
-      "crew": [
-        "Mike Johnson",
-        "Sarah Williams"
-      ],
-      "equipment": [
-        "Defibrillator",
-        "Oxygen",
-        "Stretcher",
-        "Trauma Kit"
-      ]
+      "status": "OUT_OF_SERVICE",
+      "id": "2"
     }
   ],
   "incidents": [
