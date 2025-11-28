@@ -9,49 +9,39 @@
         "lng": 2.3522,
         "address": "Paris, France"
       },
-      "crew": ["John Doe", "Jane Smith"],
-      "equipment": ["Defibrillator", "Oxygen", "Stretcher"]
+      "crew": [
+        "John Doe",
+        "Jane Smith"
+      ],
+      "equipment": [
+        "Defibrillator",
+        "Oxygen",
+        "Stretcher"
+      ]
     },
     {
-      "id": "2",
-      "callSign": "AMB-002",
-      "status": "EN_ROUTE",
-      "location": {
-        "lat": 48.8606,
-        "lng": 2.3376,
-        "address": "Paris, France"
-      },
-      "crew": ["Mike Johnson", "Sarah Williams"],
-      "equipment": ["Defibrillator", "Oxygen", "Stretcher", "Trauma Kit"]
+      "status": "ON_SCENE",
+      "id": "2"
     }
   ],
   "incidents": [
     {
-      "id": "1",
-      "type": "Cardiac Arrest",
-      "priority": "CRITICAL",
+      "assignedAmbulanceId": "1",
       "status": "ASSIGNED",
-      "location": {
-        "lat": 48.8606,
-        "lng": 2.3376,
-        "address": "15 Rue de la Paix, Paris"
-      },
-      "description": "Male, 65 years old, chest pain",
-      "reportedAt": "2024-01-15T10:30:00Z",
-      "assignedAmbulanceId": "2"
+      "id": "24de"
     },
     {
-      "id": "2",
-      "type": "Traffic Accident",
-      "priority": "HIGH",
+      "id": "a3cc",
+      "type": "Emergency",
+      "priority": "LOW",
       "status": "PENDING",
       "location": {
-        "lat": 48.8738,
-        "lng": 2.2950,
-        "address": "Avenue des Champs-Élysées, Paris"
+        "lat": 24,
+        "lng": 24,
+        "address": "Beatae voluptas eu e"
       },
-      "description": "Multi-vehicle collision, 3 injured",
-      "reportedAt": "2024-01-15T11:00:00Z"
+      "description": "Odit eos molestias s",
+      "reportedAt": "2025-11-28T10:38:22.408Z"
     }
   ]
 }

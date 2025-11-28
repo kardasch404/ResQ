@@ -1,0 +1,55 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e7]:
+      - link "ResQ" [ref=e8] [cursor=pointer]:
+        - /url: /
+      - link "Dashboard" [ref=e9] [cursor=pointer]:
+        - /url: /
+      - link "Dispatch" [ref=e10] [cursor=pointer]:
+        - /url: /dispatch
+      - link "Incidents" [ref=e11] [cursor=pointer]:
+        - /url: /incidents
+      - link "Fleet" [ref=e12] [cursor=pointer]:
+        - /url: /ambulances
+      - link "Map" [ref=e13] [cursor=pointer]:
+        - /url: /map
+  - main [ref=e14]:
+    - generic [ref=e15]:
+      - generic [ref=e16]:
+        - heading "Incident Management" [level=1] [ref=e17]
+        - button "New Incident" [ref=e18] [cursor=pointer]
+      - table [ref=e20]:
+        - rowgroup [ref=e21]:
+          - row "Type Priority Status Location Reported Assigned Actions" [ref=e22]:
+            - cell "Type" [ref=e23]
+            - cell "Priority" [ref=e24]
+            - cell "Status" [ref=e25]
+            - cell "Location" [ref=e26]
+            - cell "Reported" [ref=e27]
+            - cell "Assigned" [ref=e28]
+            - cell "Actions" [ref=e29]
+        - rowgroup [ref=e30]:
+          - row "Emergency HIGH PENDING 123 Main Street, Paris 11/28/2025, 9:51:36 AM - Assign Delete" [ref=e31]:
+            - cell "Emergency" [ref=e32]
+            - cell "HIGH" [ref=e33]
+            - cell "PENDING" [ref=e34]
+            - cell "123 Main Street, Paris" [ref=e35]
+            - cell "11/28/2025, 9:51:36 AM" [ref=e36]
+            - cell "-" [ref=e37]
+            - cell "Assign Delete" [ref=e38]:
+              - button "Assign" [ref=e39] [cursor=pointer]
+              - button "Delete" [ref=e40] [cursor=pointer]
+          - row "Emergency HIGH PENDING 123 Main Street, Paris 11/28/2025, 9:52:26 AM - Assign Delete" [ref=e41]:
+            - cell "Emergency" [ref=e42]
+            - cell "HIGH" [ref=e43]
+            - cell "PENDING" [ref=e44]
+            - cell "123 Main Street, Paris" [ref=e45]
+            - cell "11/28/2025, 9:52:26 AM" [ref=e46]
+            - cell "-" [ref=e47]
+            - cell "Assign Delete" [ref=e48]:
+              - button "Assign" [ref=e49] [cursor=pointer]
+              - button "Delete" [ref=e50] [cursor=pointer]
+```

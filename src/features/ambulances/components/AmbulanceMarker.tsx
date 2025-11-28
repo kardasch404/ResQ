@@ -7,7 +7,12 @@ interface AmbulanceMarkerProps {
   onClick?: (id: string) => void;
 }
 
+
 export default function AmbulanceMarker({ ambulance, onClick }: AmbulanceMarkerProps) {
+  if (!ambulance?.location?.lat || !ambulance?.location?.lng) {
+    return null;
+  }
+
   const icon = createAmbulanceIcon(ambulance.status, 0);
 
   return (
@@ -30,3 +35,4 @@ export default function AmbulanceMarker({ ambulance, onClick }: AmbulanceMarkerP
     </Marker>
   );
 }
+
