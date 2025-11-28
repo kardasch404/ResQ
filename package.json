@@ -25,6 +25,7 @@
     "react-leaflet": "^5.0.0",
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.9.6",
+    "recharts": "^3.5.1",
     "zod": "^4.1.13"
   },
   "devDependencies": {
