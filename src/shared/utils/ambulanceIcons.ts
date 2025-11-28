@@ -1,4 +1,4 @@
-import { divIcon } from 'leaflet';
+  import { divIcon } from 'leaflet';
 import { AmbulanceStatus } from '../types';
 
 const getColorByStatus = (status: AmbulanceStatus): string => {

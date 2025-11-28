@@ -9,8 +9,15 @@
         "lng": 2.3522,
         "address": "Paris, France"
       },
-      "crew": ["John Doe", "Jane Smith"],
-      "equipment": ["Defibrillator", "Oxygen", "Stretcher"]
+      "crew": [
+        "John Doe",
+        "Jane Smith"
+      ],
+      "equipment": [
+        "Defibrillator",
+        "Oxygen",
+        "Stretcher"
+      ]
     },
     {
       "id": "2",
@@ -21,8 +28,16 @@
         "lng": 2.3376,
         "address": "Paris, France"
       },
-      "crew": ["Mike Johnson", "Sarah Williams"],
-      "equipment": ["Defibrillator", "Oxygen", "Stretcher", "Trauma Kit"]
+      "crew": [
+        "Mike Johnson",
+        "Sarah Williams"
+      ],
+      "equipment": [
+        "Defibrillator",
+        "Oxygen",
+        "Stretcher",
+        "Trauma Kit"
+      ]
     }
   ],
   "incidents": [
@@ -47,7 +62,7 @@
       "status": "PENDING",
       "location": {
         "lat": 48.8738,
-        "lng": 2.2950,
+        "lng": 2.295,
         "address": "Avenue des Champs-Élysées, Paris"
       },
       "description": "Multi-vehicle collision, 3 injured",

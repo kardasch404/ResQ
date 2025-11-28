@@ -7,6 +7,7 @@ interface AmbulanceMarkerProps {
   onClick?: (id: string) => void;
 }
 
+
 export default function AmbulanceMarker({ ambulance, onClick }: AmbulanceMarkerProps) {
   const icon = createAmbulanceIcon(ambulance.status, 0);
 
@@ -30,3 +31,4 @@ export default function AmbulanceMarker({ ambulance, onClick }: AmbulanceMarkerP
     </Marker>
   );
 }
+
