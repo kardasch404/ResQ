@@ -2,11 +2,14 @@ import { useState } from 'react';
 import { useIncidents } from '../features/incidents/hooks/useIncidents';
 import { useDeleteIncident } from '../features/incidents/hooks/useDeleteIncident';
 import IncidentForm from '../features/incidents/components/IncidentForm';
+import DispatchPanel from '../features/dispatch/components/DispatchPanel';
+import type { Incident } from '../shared/types';
 
 export default function Incidents() {
   const { data: incidents = [], isLoading } = useIncidents();
   const deleteIncident = useDeleteIncident();
   const [showForm, setShowForm] = useState(false);
+  const [selectedIncident, setSelectedIncident] = useState<Incident | null>(null);
 
   const handleDelete = (id: string) => {
     if (confirm('Are you sure you want to delete this incident?')) {
@@ -36,6 +39,7 @@ export default function Incidents() {
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Status</th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Location</th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Reported</th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Assigned</th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Actions</th>
             </tr>
           </thead>
@@ -58,7 +62,18 @@ export default function Incidents() {
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                   {new Date(incident.reportedAt).toLocaleString()}
                 </td>
-                <td className="px-6 py-4 whitespace-nowrap">
+                <td className="px-6 py-4 whitespace-nowrap text-sm">
+                  {incident.assignedAmbulanceId || '-'}
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap space-x-2">
+                  {incident.status === 'PENDING' && (
+                    <button
+                      onClick={() => setSelectedIncident(incident)}
+                      className="text-blue-600 hover:text-blue-900"
+                    >
+                      Assign
+                    </button>
+                  )}
                   <button
                     onClick={() => handleDelete(incident.id)}
                     className="text-red-600 hover:text-red-900"
@@ -71,6 +86,8 @@ export default function Incidents() {
           </tbody>
         </table>
       </div>
+
+      <DispatchPanel incident={selectedIncident} onClose={() => setSelectedIncident(null)} />
     </div>
   );
 }
