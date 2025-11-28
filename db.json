@@ -1,0 +1,71 @@
+{
+  "ambulances": [
+    {
+      "id": "1",
+      "callSign": "AMB-001",
+      "status": "AVAILABLE",
+      "location": {
+        "lat": 48.8566,
+        "lng": 2.3522,
+        "address": "Paris, France"
+      },
+      "crew": [
+        "John Doe",
+        "Jane Smith"
+      ],
+      "equipment": [
+        "Defibrillator",
+        "Oxygen",
+        "Stretcher"
+      ]
+    },
+    {
+      "id": "2",
+      "callSign": "AMB-002",
+      "status": "EN_ROUTE",
+      "location": {
+        "lat": 48.8606,
+        "lng": 2.3376,
+        "address": "Paris, France"
+      },
+      "crew": [
+        "Mike Johnson",
+        "Sarah Williams"
+      ],
+      "equipment": [
+        "Defibrillator",
+        "Oxygen",
+        "Stretcher",
+        "Trauma Kit"
+      ]
+    }
+  ],
+  "incidents": [
+    {
+      "id": "24de",
+      "type": "Emergency",
+      "priority": "HIGH",
+      "status": "PENDING",
+      "location": {
+        "lat": 48.8566,
+        "lng": 2.3522,
+        "address": "123 Main Street, Paris"
+      },
+      "description": "Male, 45 years old, chest pain",
+      "reportedAt": "2025-11-28T08:51:36.850Z"
+    },
+    {
+      "id": "7c9e",
+      "type": "Emergency",
+      "priority": "HIGH",
+      "status": "PENDING",
+      "location": {
+        "lat": 48.8566,
+        "lng": 2.3522,
+        "address": "123 Main Street, Paris"
+      },
+      "description": "Male, 45 years old, chest pain",
+      "reportedAt": "2025-11-28T08:52:26.183Z"
+    }
+  ]
+}

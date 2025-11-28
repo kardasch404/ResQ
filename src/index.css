@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ambulance-icon,
+.incident-icon {
+  background: transparent;
+  border: none;
+}
