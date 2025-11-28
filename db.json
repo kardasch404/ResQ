@@ -42,31 +42,30 @@
   ],
   "incidents": [
     {
-      "id": "1",
-      "type": "Cardiac Arrest",
-      "priority": "CRITICAL",
-      "status": "ASSIGNED",
-      "location": {
-        "lat": 48.8606,
-        "lng": 2.3376,
-        "address": "15 Rue de la Paix, Paris"
-      },
-      "description": "Male, 65 years old, chest pain",
-      "reportedAt": "2024-01-15T10:30:00Z",
-      "assignedAmbulanceId": "2"
-    },
-    {
-      "id": "2",
-      "type": "Traffic Accident",
+      "id": "24de",
+      "type": "Emergency",
       "priority": "HIGH",
       "status": "PENDING",
       "location": {
-        "lat": 48.8738,
-        "lng": 2.295,
-        "address": "Avenue des Champs-Élysées, Paris"
+        "lat": 48.8566,
+        "lng": 2.3522,
+        "address": "123 Main Street, Paris"
       },
-      "description": "Multi-vehicle collision, 3 injured",
-      "reportedAt": "2024-01-15T11:00:00Z"
+      "description": "Male, 45 years old, chest pain",
+      "reportedAt": "2025-11-28T08:51:36.850Z"
+    },
+    {
+      "id": "7c9e",
+      "type": "Emergency",
+      "priority": "HIGH",
+      "status": "PENDING",
+      "location": {
+        "lat": 48.8566,
+        "lng": 2.3522,
+        "address": "123 Main Street, Paris"
+      },
+      "description": "Male, 45 years old, chest pain",
+      "reportedAt": "2025-11-28T08:52:26.183Z"
     }
   ]
 }
