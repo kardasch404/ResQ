@@ -1,27 +1,28 @@
 {
   "ambulances": [
     {
-      "id": "1",
-      "callSign": "AMB-001",
-      "status": "AVAILABLE",
-      "location": {
-        "lat": 48.8566,
-        "lng": 2.3522,
-        "address": "Paris, France"
-      },
-      "crew": [
-        "John Doe",
-        "Jane Smith"
-      ],
-      "equipment": [
-        "Defibrillator",
-        "Oxygen",
-        "Stretcher"
-      ]
+      "status": "TRANSPORTING",
+      "id": "1"
     },
     {
       "status": "ON_SCENE",
       "id": "2"
+    },
+    {
+      "id": "4f50",
+      "callSign": "Explicabo Minus odi",
+      "status": "AVAILABLE",
+      "location": {
+        "lat": 35,
+        "lng": 75,
+        "address": "Laborum Atque ut sa"
+      },
+      "crew": [
+        "Veniam nostrum magn"
+      ],
+      "equipment": [
+        "Et veniam voluptate"
+      ]
     }
   ],
   "incidents": [
